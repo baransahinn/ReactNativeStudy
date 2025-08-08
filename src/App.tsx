@@ -19,6 +19,10 @@ const App = () => {
           <Text>{count}</Text>
           <Text>hello world</Text>
       </View>
+        <View style={styles.centerViewContainer}>
+          <Text>{count}</Text>
+          <Text>hello world</Text>
+       </View> 
 
        <View style={styles.bottomViewContainer}>
           <Text>{count}</Text>
@@ -39,6 +43,10 @@ const styles = StyleSheet.create({
   upperViewContainer :{
      backgroundColor :"red",
      flex : 1,
+  },
+  centerViewContainer : {
+    backgroundColor : "green",
+    flex : 2
   },
   bottomViewContainer : {
     backgroundColor : "yellow",
