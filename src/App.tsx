@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { View, Text, SafeAreaView,Button, StyleSheet ,TouchableOpacity} from 'react-native'
+import { View, Text,Button, StyleSheet ,TouchableOpacity} from 'react-native'
 import Card  from './componentler/Card/Card'
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 const App = () => {
   
