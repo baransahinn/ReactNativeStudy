@@ -7,14 +7,13 @@ const App = () => {
   
   return (
     <SafeAreaView>
-      <Card/> 
-      <Card/>  
-      <Card/>         
+      <Card title="Baran Şahin" text="yarı yar olanın yar sarar yarasını"/> 
+      <Card title='oktay' text='react bilmek hayat kurtarır'/>  
+      <Card title='fatih sultan mehmet' text='sql bilen işsiz kalmaz'/>         
     </SafeAreaView>
      
   )
 }
-
 
 export default App
 
