@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { View, Text,Button, StyleSheet ,TouchableOpacity,SafeAreaView,FlatList, ScrollView, Image, Dimensions} from 'react-native'
 import news_data from './news_data.json'
-import news_banner_data from './news_banner_data.json'
+
 import Card from './componentler/NewsCard/Card'
+import Benner from './componentler/NewsCard/Benner'
 
 
 const App = () => {
@@ -14,9 +15,7 @@ const App = () => {
        <View>
         <Text style={styles.headerText}>News</Text>
       <FlatList
-        ListHeaderComponent={()=> <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {news_banner_data.map(bannerNews =>(<Image style={styles.bennerİmage} source={{uri:bannerNews.imageUrl}}/>))}
-        </ScrollView>}
+        ListHeaderComponent={()=> <Benner/>}
         data={news_data}
         renderItem={renderNews}/>
       </View>
@@ -28,10 +27,6 @@ const styles = StyleSheet.create({
   container :{
     flex: 1,
     backgroundColor: '#eceff1'
-  },
-  bennerİmage:{
-    height : Dimensions.get('window').height/5,
-    width : Dimensions.get('window').width /2,
   },
   headerText:{
     fontWeight:'bold',
